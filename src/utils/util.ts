@@ -29,7 +29,7 @@ export  const getOwner = async (id: string) => {
     }
   });
 
-  const owner = res.data?.owner?.AddressOwner;
+  const owner = (res as any).data?.owner?.AddressOwner;
   return owner;
 }
 

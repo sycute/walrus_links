@@ -12,12 +12,12 @@ export async function getSiteList(): Promise<SiteCardProps[]> {
         if (ids.length > 0) {
             // 获取 objects
             const datas = await getObjects(ids);
-            datas.forEach((data, index) => {
+            datas.forEach((data, _index) => {
                 reply.push({
-                    id: data.data?.content?.fields.name,
-                    name: data.data?.content?.fields.value.fields.name,
+                    id: (data as any).data?.content?.fields.name,
+                    name: (data as any).data?.content?.fields.value.fields.name,
                     author: "?",
-                    description: data.data?.content?.fields.value.fields.desc
+                    description: (data as any).data?.content?.fields.value.fields.desc
                 });
             });
 
