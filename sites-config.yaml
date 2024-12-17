@@ -1,0 +1,5 @@
+package: 0xc5bebae319fc9d2a9dc858b7484cdbd6ef219decf4662dc81a11dc69bb7a5fa7
+# site-builder publish ./dist --epochs 10
+
+# result:New site object ID: 0x2b98d4d20f180ea36265b7c6c16d02e5f4dc1ed190f8723aea0a6dee8a7361af
+# Browse the resulting site at: https://1348sgxen0gs7kqnq1u6vyx1rq1hk5o7gc5jl0jzs0jf3up5f3.walrus.site
